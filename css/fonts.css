@@ -1,0 +1,25 @@
+@font-face {
+  font-family: yekan;
+  src: url("/assets/fonts/Yekan.woff");
+}
+
+@font-face {
+  font-family: sahel;
+  src: url("/assets/fonts/Sahel.woff");
+}
+
+body,
+button,
+input[type="text"],
+input[type="email"],
+textarea {
+  font-family: yekan;
+}
+
+.en {
+  font-family: vazir;
+}
+
+.small {
+  font-size: 1rem;
+}
