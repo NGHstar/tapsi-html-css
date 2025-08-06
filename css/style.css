@@ -378,7 +378,8 @@ p {
   align-items: center;
   border: none;
   border-radius: 15px;
-  margin: 1rem;
+  margin-bottom: 4rem;
+  padding: 1rem;
 }
 
 .contact__form h2 {
@@ -393,7 +394,7 @@ textarea {
   font-size: 1.8rem;
   border: none;
   background-color: rgb(237, 237, 245);
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   border-radius: 4rem;
   padding: 1rem 2rem;
   width: 100%;
@@ -431,6 +432,7 @@ textarea {
 
   .contact__form {
     margin-right: 3rem;
+    padding: 0 3rem;
     grid-area: form;
     border: 1px solid rgb(224, 224, 224);
   }
