@@ -20,6 +20,11 @@
   --white-color: white;
 }
 
+@font-face {
+  font-family: vazir_matn;
+  src: url(/assets/fonts/vazir.woff2);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -74,7 +79,8 @@ p {
   text-align: center;
   white-space: nowrap;
   font-size: 1.8rem;
-  padding: 0.7rem 3rem;
+  line-height: 1.5;
+  padding: 0.7rem 3rem 1rem 3rem;
 }
 
 .btn--primary {
@@ -256,7 +262,7 @@ p {
 
 @media screen and (min-width: 1024px) {
   .container {
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
   }
 }
@@ -340,6 +346,7 @@ p {
 
 .way__item__text {
   font-size: 1.6rem;
+  font-family: vazir_matn;
   display: inline;
   line-height: 1.3;
   text-align: center;
@@ -542,7 +549,7 @@ textarea {
 }
 
 .nav {
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -553,7 +560,8 @@ textarea {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
+  justify-content: center;
   font-size: 1.4rem;
   max-height: 0;
   overflow: hidden;
@@ -574,7 +582,6 @@ textarea {
 
 .nav__item > a {
   display: block;
-  padding-bottom: 1rem;
   border-bottom: 1px solid #ddd;
   text-decoration: none;
   color: #545454;
@@ -598,6 +605,10 @@ textarea {
 }
 
 @media screen and (min-width: 1024px) {
+  .nav {
+    padding: 2rem 9.8rem;
+  }
+
   .nav__toggle {
     display: none;
   }
@@ -675,11 +686,7 @@ textarea {
 }
 
 .intro-btn {
-  background: linear-gradient(
-    51deg,
-    rgba(23, 26, 60, 0.7) 5%,
-    rgba(23, 26, 60, 0.3) 95%
-  );
+  background: linear-gradient(51deg, rgba(23, 26, 60, 0.7) 5%, rgba(23, 26, 60, 0.3) 95%);
   border-radius: 20px;
   padding: 20px;
 }
@@ -1057,7 +1064,7 @@ p {
   height: 50px;
   font-size: 1.5rem;
   border: 4px solid white;
-  font-family: vazir;
+  font-family: vazir_matn;
   font-weight: bold;
   padding-top: 0.3rem;
   background-color: var(--primary-color-light);
